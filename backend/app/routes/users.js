@@ -2,6 +2,7 @@ const db = require("../db");
 const _ = require("lodash");
 const { protectedRoute, responses } = require("./context");
 const { SUCCESS, FAILED, NOTFOUND } = responses();
+const dbSetup = require("../db-setup");
 
 const dbUser = db.User;
 const nameUser = "User";
@@ -134,11 +135,6 @@ const hardDelete = async ctx => {
 	}
 };
 
-const welcome = ctx => {
-	ctx.body = "Welcome to FLAD API";
-	ctx.status = 200;
-};
-
 const lockUser = async ctx => {
 	const { body } = ctx.request;
 	if (body) {
@@ -175,11 +171,24 @@ const unlockUser = async ctx => {
 	}
 };
 
+const welcome = ctx => {
+	ctx.body = "Welcome to FLAD API";
+	ctx.status = 200;
+};
+
+const setupUser = async ctx => {
+	dbSetup().then(({ adminToken }) => {
+		ctx.body = `admin access token: ${adminToken}`;
+		ctx.status = 200;
+	});
+};
+
 module.exports = {
 	attach(router) {
 		router.get("/", welcome);
 		router.get("/users", ctx => protectedRoute("admin", getAll, ctx));
 		router.get("/users/id", ctx => protectedRoute("user", getById, ctx));
+		router.post("/setup/users", setupUser);
 		router.post("/lock/users", ctx =>
 			protectedRoute("admin", lockUser, ctx)
 		);

@@ -4,7 +4,7 @@ const json = require("koa-json");
 const bodyParser = require("koa-bodyparser");
 const cors = require("@koa/cors");
 
-const dbSetup = require("./db-setup");
+// const dbSetup = require("./db-setup");
 const config = require("./config");
 const { modules } = require("./routes");
 
@@ -26,9 +26,9 @@ const { modules } = require("./routes");
 
 	let port = config.server.port;
 	console.log(`Listening on port  ${port}`);
-	dbSetup().then(({ adminToken }) => {
-		console.log(`admin access token: ${adminToken}`);
-	});
+	// dbSetup().then(({ adminToken }) => {
+	// 	console.log(`admin access token: ${adminToken}`);
+	// });
 
 	app.listen(port);
 })();

@@ -97,15 +97,15 @@ export default {
 
       // Format data
       let facebookLivestreamId = this.$route.params.id;
-      let facebookAccessToken = null;
-      if (this.pageCurrent) {
-        facebookAccessToken = this.pageCurrent.accessToken;
-      }
+      // let facebookAccessToken = null;
+      // if (this.pageCurrent) {
+      //   facebookAccessToken = this.pageCurrent.accessToken;
+      // }
       let params = {
         customerId,
         couponId,
         code: createStringRandom("OrderLive"),
-        facebookAccessToken,
+        // facebookAccessToken,
         facebookLivestreamId,
         facebookUserId: sender.id || null,
         facebookPageId: this.pageCurrent.id || null,

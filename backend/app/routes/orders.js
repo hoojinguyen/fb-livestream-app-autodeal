@@ -235,9 +235,11 @@ const fnHandleOrderByStatus = async args => {
 				}
 			}
 			result = await checkExistOrder(order);
+			console.log("🚀 ~ result", result);
 			if (!result) {
 				result = await saveOrder(order);
 			}
+			console.log("🚀 ~ result", result);
 
 			if (result.status > 4 || result.status == 0) {
 				return { error: { message: "status invalid" } };
