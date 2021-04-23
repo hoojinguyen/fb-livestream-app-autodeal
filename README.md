@@ -3,3 +3,11 @@ Information technology and Live Commerce (online sales), are gradually being wid
 
 ## Notes
   - The entire source code is developed relatively completely at ***https://gitlab.com/kltn2*** . Currently migrated to github.
+
+## Demo
+  - Client: ***https://flad.hkteam.site/***
+  - Admin: ***https://admin.hkteam.site/***
+
+## Authors
+  - Nguyễn Văn Hội (vanhoinguyen98@gmail.com)
+  - Lê Mai Văn Khánh (khanhduv4@gmail.com)
