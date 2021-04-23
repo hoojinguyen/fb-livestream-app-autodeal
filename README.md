@@ -5,6 +5,7 @@ Information technology and Live Commerce (online sales), are gradually being wid
   - The entire source code is developed relatively completely at ***https://gitlab.com/kltn2*** . Currently migrated to github.
 
 ## Demo
+  - Video introduce: ***https://youtu.be/0Gy9RAZZUNo***
   - Client: ***https://flad.hkteam.site***
   - Admin: ***https://admin.hkteam.site***
 
