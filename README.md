@@ -9,6 +9,17 @@ Information technology and Live Commerce (online sales), are gradually being wid
   - Client: ***https://flad.hkteam.site***
   - Admin: ***https://admin.hkteam.site***
 
+### Techniques
+  - Vuejs framework
+  - Facebook SDK
+  - Nodejs
+  - Koa framework
+  - Postgresql
+  - AWS S3
+  - Docker
+  - Kubernetes
+  - Gcloud
+
 ## Authors
   - Nguyễn Văn Hội ( vanhoinguyen98@gmail.com )
   - Lê Mai Văn Khánh ( khanhduv4@gmail.com )
