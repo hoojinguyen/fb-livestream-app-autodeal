@@ -1,0 +1,41 @@
+.sale-page {
+  height: calc(100vh - 120px);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border: 1px solid #dddddd;
+  text-align: center;
+
+  .sp-w25 {
+    width: 25%;
+  }
+
+  .sp-w30 {
+    width: 30%;
+  }
+
+  .sp-w35 {
+    width: 35%;
+  }
+
+  .sp-w40 {
+    width: 40%;
+  }
+
+  .sp-w45 {
+    width: 45%;
+  }
+
+  .sp-w50 {
+    width: 50%;
+  }
+
+  .sp-br {
+    border-right: 1px solid #dddddd;
+  }
+
+  .sp-bl {
+    border-left: 1px solid #dddddd;
+  }
+}

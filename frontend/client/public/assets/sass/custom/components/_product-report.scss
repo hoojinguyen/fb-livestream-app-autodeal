@@ -1,0 +1,53 @@
+.product-report {
+  .footer-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .rp-no-data {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-top: 10%;
+    width: 100%;
+    height: 250px;
+  }
+  &__header {
+    .pro-title {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  }
+
+  &__body {
+    text-align: center;
+    .pro-chart {
+      margin-top: 40px;
+
+      &__header {
+        .title {
+          font-weight: bold;
+          font-size: 1.8rem;
+          text-transform: uppercase;
+        }
+        .sub-title {
+          font-weight: thin;
+          font-style: italic;
+          font-size: 1.4rem;
+        }
+      }
+
+      &__body {
+        width: 100%;
+        .data-table {
+          margin-left: 3%;
+          margin-right: 3%;
+          margin-top: 30px;
+        }
+
+        .data-chart {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}

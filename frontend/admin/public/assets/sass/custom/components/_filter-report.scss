@@ -1,0 +1,28 @@
+.report-filter {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    label {
+      font-weight: normal;
+      font-size: 1.2rem;
+    }
+    .cus-dropdown {
+      margin-top: 10px;
+      margin-right: 20px;
+      width: 300px;
+    }
+    .cus-button {
+      margin-top: 28px;
+      width: 150px;
+    }
+    .cus-sebutton {
+      margin-top: 10px;
+      margin-right: 40px;
+    }
+  }
+}

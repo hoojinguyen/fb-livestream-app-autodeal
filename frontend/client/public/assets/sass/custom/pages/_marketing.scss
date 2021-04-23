@@ -1,0 +1,54 @@
+.marketing-container {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: calc(100vh - 130px);
+  min-height: calc(100vh - 130px);
+
+  .table-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h5 {
+      font-weight: bold;
+      padding-top: 10px;
+    }
+  }
+
+  .product-image {
+    max-width: 30%;
+    img {
+      widows: 100%;
+    }
+  }
+
+  .dialog-share {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+
+    &__left {
+      .list-image {
+        margin-top: 15px;
+        border: 1px solid #dddddd;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+
+        overflow-y: hidden;
+        overflow-x: scroll;
+        max-width: 635px;
+        min-width: 635px;
+
+        img {
+          width: 15%;
+        }
+      }
+    }
+
+    &__right {
+      border: 1px solid #dddddd;
+    }
+  }
+}

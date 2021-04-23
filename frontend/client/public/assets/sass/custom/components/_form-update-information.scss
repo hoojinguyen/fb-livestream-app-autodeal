@@ -1,0 +1,17 @@
+.sale-form-update {
+  height: 100%;
+  text-align: left;
+  padding: 10px;
+
+  .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .group-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}

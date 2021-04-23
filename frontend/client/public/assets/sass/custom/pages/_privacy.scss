@@ -1,0 +1,12 @@
+.privacy {
+  margin: 40px 160px;
+  &__title {
+    text-align: center;
+    margin-top: 40px;
+  }
+  &__content {
+    font-weight: 600;
+    padding: 0px;
+    margin-bottom: 30px !important;
+  }
+}

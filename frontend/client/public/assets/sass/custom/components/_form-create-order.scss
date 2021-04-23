@@ -1,0 +1,214 @@
+.sale-form-create {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  &__header {
+    padding-bottom: 10px;
+
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      text-align: left;
+      padding-top: 12px;
+      padding-left: 15px;
+    }
+
+    .input-autocomplete {
+      margin-left: 10px;
+      margin-right: 10px;
+      &__custom {
+        text-align: left;
+        .custom-image {
+          max-width: 100%;
+          img {
+            width: 80%;
+            padding-left: 10px;
+            padding-top: 10px;
+          }
+        }
+
+        .custom-title {
+          padding-top: 20px;
+
+          &__main {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+          }
+
+          &__sub {
+            font-size: 16px;
+            color: grey;
+          }
+        }
+
+        .custom-price {
+          padding-top: 20px;
+          margin-top: 10px;
+          font-weight: 400;
+          span {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  &__coupon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 10px;
+
+    .coupon-content {
+      padding-right: 20px;
+      padding-top: 8px;
+      margin-top: 0px;
+      color: #dd7c3d;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  }
+
+  &__body {
+    max-height: calc(100vh - 395px);
+    min-height: calc(100vh - 395px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-top: 10px;
+
+    .table-product {
+      text-align: left;
+      padding: 10px 15px;
+
+      &__header {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 0px;
+        border-bottom: 1px solid #dddddd;
+      }
+
+      &__content {
+        margin-top: 10px;
+
+        .icon {
+          cursor: pointer;
+          padding-top: 15px;
+          &__discount {
+            color: #0e4f9c;
+            padding: 6px;
+            border-radius: 50%;
+            border: 1px solid #0e4f9c;
+            i {
+              font-weight: bold;
+              font-size: 16px;
+            }
+          }
+          &__remove {
+            padding: 6px;
+
+            i {
+              font-weight: bold;
+              font-size: 16px;
+            }
+          }
+        }
+
+        .name-product {
+          &__title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 0px;
+          }
+
+          &__subTitle {
+            padding-top: 0px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            font-size: 15px;
+            color: grey;
+          }
+
+          &__discount {
+            padding-top: 0px;
+            margin-top: 0px;
+            color: #dd7c3d;
+            font-weight: bold;
+            font-size: 15px;
+          }
+        }
+
+        .price-product {
+          padding-top: 12px;
+          padding-left: 15px;
+          font-weight: bold;
+          font-size: 16px;
+        }
+
+        .input-stock {
+          input {
+            width: 60px;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid grey;
+            border-radius: 10px;
+          }
+        }
+
+        .input-price {
+          input {
+            width: 100px;
+            padding: 10px;
+            text-align: right;
+            border: 1px solid grey;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &__addition {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      padding-left: 15px;
+      padding-top: 15px;
+      font-weight: bold;
+      font-size: 20px;
+      color: #0e4f9c;
+    }
+
+    .price-total {
+      padding-right: 25px;
+      padding-top: 15px;
+      font-weight: bold;
+      font-size: 20px;
+      color: #0e4f9c;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    border-top: 1px solid #dddddd;
+    align-items: center;
+
+    .left {
+      padding-left: 10px;
+    }
+
+    .right {
+      padding-right: 10px;
+    }
+  }
+}

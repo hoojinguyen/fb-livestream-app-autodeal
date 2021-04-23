@@ -1,0 +1,287 @@
+.ls-detail {
+  background-color: white;
+
+  .side-bar-log-container {
+    .side-bar-log {
+      max-height: calc(100vh - 120px);
+      min-height: calc(100vh - 120px);
+      overflow-x: hidden;
+      overflow-y: scroll;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      .log-item {
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+        padding: 10px 15px;
+        background: #f8f9fa;
+        margin-top: 10px;
+
+        display: flex;
+        flex-direction: column;
+        &__title {
+          font-size: 1rem;
+          font-weight: bold;
+        }
+        &__description {
+          padding-top: 5px;
+          font-size: 0.9rem;
+          font-weight: thin;
+          font-style: italic;
+        }
+        &__time {
+          font-size: 0.8rem;
+          font-weight: bold;
+          text-align: right;
+        }
+      }
+    }
+    .side-bar-log-empty {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+
+  &__header {
+    height: 60px;
+    border: 1px solid #dddddd;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__back {
+      width: 3%;
+    }
+
+    &__information {
+      width: 97%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .ls-header-info-setting {
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding-right: 10px;
+
+        .syntax-title {
+          font-weight: bold;
+          padding-right: 10px;
+        }
+
+        .syntax-format {
+          .syntax-text {
+            font-size: 1.2rem;
+          }
+
+          .syntax-badge-space {
+            border-radius: 2px;
+            padding: 0.25em 0.5rem;
+            font-size: 1rem;
+            letter-spacing: 0.3px;
+            background: rgba(#dddddd, 0.7);
+            padding: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .ls-header-info-live {
+        padding-right: 20px;
+        font-size: 1.2rem;
+
+        .info-live-num {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 50px);
+
+    &__left {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+
+      .ls-detail-comment-header {
+        padding: 10px 15px;
+        border-bottom: 1px solid #dddddd;
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+
+        .header-left {
+          font-size: 1.4rem;
+        }
+
+        .header-right {
+          padding-top: 3px;
+          .refresh-live {
+            padding-right: 10px;
+            cursor: pointer;
+            i {
+              font-weight: bold;
+              color: #56a3ed;
+            }
+          }
+          .video-end {
+            background: #c8e6c9;
+            color: #256029;
+            border-radius: 2px;
+            padding: 2px 5px;
+            font-size: 1rem;
+          }
+          .video-live {
+            background: #ffcdd2;
+            color: #c63737;
+            border-radius: 2px;
+            padding: 2px 5px;
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .ls-detail-comment-body {
+        max-height: calc(100vh - 120px);
+        min-height: calc(100vh - 120px);
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding: 20px 10px;
+
+        .ls-comment-empty {
+          text-align: center;
+          font-weight: bold;
+          font-size: 1.2rem;
+          margin-top: 120px;
+        }
+
+        .ls-comment-card {
+          :hover {
+            background-color: rgba(#dddddd, 1);
+            border-radius: 30px;
+          }
+          border: 1px solid #dddddd;
+          background-color: rgba(#dddddd, 0.7);
+          box-shadow: 0 -2px 10px 0 rgba(#dddddd, 0.8);
+          border-radius: 30px;
+          cursor: pointer;
+
+          .ls-comment-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: 5px;
+
+            &__avatar {
+              vertical-align: middle;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              margin-top: 5px;
+            }
+
+            &__info {
+              padding-left: 20px;
+
+              .info-name {
+                font-size: 1.2rem;
+                font-weight: bold;
+                padding-top: 5px;
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+              }
+
+              .info-comment {
+                font-size: 1rem;
+                color: grey;
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+                margin-right: 10px;
+
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__right {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      border-left: 1px solid #dddddd;
+
+      .ls-detail-order-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 15px;
+        border-bottom: 1px solid #dddddd;
+
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+
+      .ls-detail-order-body {
+        max-height: calc(100vh - 120px);
+        min-height: calc(100vh - 120px);
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+
+      .ls-product-image {
+        max-width: 30%;
+        img {
+          widows: 100%;
+        }
+      }
+    }
+  }
+}
+
+#right-click-menu-option {
+  background: #fafafa;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 200px;
+  z-index: 999999;
+  li {
+    border-bottom: 1px solid #dddddd;
+    margin: 0;
+    padding: 8px 15px;
+    span {
+      padding-right: 10px;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      background: #56a3ed;
+      color: #fafafa;
+    }
+  }
+}

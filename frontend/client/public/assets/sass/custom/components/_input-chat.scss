@@ -1,0 +1,99 @@
+.input-chat-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .input-chat {
+    height: 100%;
+
+    &__file-attachment {
+      background-color: #c5dfed;
+      height: 18%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      &__title {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #ec1a38;
+      }
+
+      &__close {
+        img {
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__message {
+      border-top: 1px solid #f2f2f2;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 100%;
+      height: 82%;
+
+      &__type-box {
+        textarea:hover,
+        textarea:active,
+        textarea:focus {
+          outline: 0px !important;
+          -webkit-appearance: none;
+          box-shadow: none !important;
+          border-color: white !important;
+        }
+
+        .input-box-type {
+          font-size: 1.2rem;
+          width: 100%;
+          height: 100%;
+
+          padding-top: 20px;
+          padding-left: 20px;
+
+          max-height: 100%;
+          min-height: 100%;
+
+          overflow-x: hidden;
+          overflow-y: scroll;
+          resize: none;
+          outline: 0px !important;
+          border: none !important;
+          -webkit-appearance: none;
+          box-shadow: none !important;
+          border-color: white !important;
+        }
+      }
+
+      &__action-box {
+        padding-top: 20px;
+        padding-right: 10px;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        .button-box-action {
+          margin-left: 15px;
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+
+          .file-input-hidden {
+            display: none;
+          }
+
+          img {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}

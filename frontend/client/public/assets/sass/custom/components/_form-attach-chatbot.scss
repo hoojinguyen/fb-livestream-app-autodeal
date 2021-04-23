@@ -1,0 +1,74 @@
+.field {
+  .field-list {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+      border: 1px solid #dddddd;
+      margin-top: 5px;
+      width: 510px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: white;
+
+      .item-name {
+        color: #0e4f9c;
+        font-size: 1.2rem;
+      }
+
+      .item-close {
+        font-weight: width;
+        font-size: 1.2rem;
+        color: red;
+        cursor: pointer;
+
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .field-button {
+    width: 510px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+    &__item {
+      font-size: 1.1rem;
+      border: 1px solid #dddddd;
+      padding: 10px;
+      width: 170px;
+      cursor: pointer;
+      text-align: center;
+      span {
+        font-weight: bold;
+        &:hover {
+          color: #0e4f9c;
+        }
+      }
+    }
+  }
+
+  .field-form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 510px;
+    .item-input {
+      max-width: 510px;
+      margin-top: 5px;
+    }
+    .item-confirm {
+      max-width: 510px;
+      margin-top: 10px;
+      float: right;
+      text-align: right;
+    }
+  }
+}

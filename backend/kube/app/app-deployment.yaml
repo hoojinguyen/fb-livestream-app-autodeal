@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flad-api
+  annotations:
+    reloader.stakater.com/auto: "true"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: flad-api
+  template:
+    metadata:
+      labels:
+        app: flad-api
+    spec:
+      containers:
+        - name: app
+          image: registry.gitlab.com/kltn2/app-backend/fladver5
+          resources:
+            limits:
+              cpu: "0.5"
+              memory: "600M"
+            requests:
+              cpu: "0.04"
+              memory: "50M"
+          ports:
+            - containerPort: 1234
+          envFrom:
+            - configMapRef:
+                name: app-config
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 1234
+            initialDelaySeconds: 30
+            periodSeconds: 3
+            timeoutSeconds: 5

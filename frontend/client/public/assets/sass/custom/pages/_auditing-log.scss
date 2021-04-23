@@ -1,0 +1,67 @@
+.log-container {
+  border: 1px solid #dddddd;
+
+  .log {
+    &__header {
+      height: 60px;
+      border-bottom: 1px solid #dddddd;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 15px;
+      background-color: #ffffff;
+
+      &__left {
+        span {
+          font-weight: bold;
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    &__body {
+      max-height: calc(100vh - 190px);
+      min-height: calc(100vh - 190px);
+      overflow-x: hidden;
+      overflow-y: scroll;
+
+      .table {
+        padding: 20px;
+        .is-header {
+          font-weight: bold;
+          background-color: #dddddd;
+          font-size: 1.1rem;
+        }
+
+        .row-item {
+          padding: 20px 10px;
+          display: flex;
+          flex-direction: row;
+          margin-top: 20px;
+          font-size: 1rem;
+          &:hover {
+            background-color: #dddddd;
+            cursor: pointer;
+          }
+          .date {
+            width: 10%;
+          }
+          .user {
+            width: 15%;
+          }
+          .action {
+            width: 15%;
+          }
+          .description {
+            width: 40%;
+          }
+          .reference {
+            width: 20%;
+          }
+        }
+      }
+    }
+  }
+}

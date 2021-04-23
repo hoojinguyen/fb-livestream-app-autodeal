@@ -1,0 +1,119 @@
+.ls-page-container {
+  border: 1px solid #dddddd;
+
+  .ls-page {
+    &__header {
+      height: 60px;
+      border-bottom: 1px solid #dddddd;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      .header-left {
+        .left-title {
+          font-weight: bold;
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    &__body {
+      max-height: calc(100vh - 190px);
+      min-height: calc(100vh - 190px);
+      overflow-x: hidden;
+      overflow-y: scroll;
+
+      &__wrapper {
+        display: grid;
+        grid-column-gap: 0.5em;
+        grid-row-gap: 0.5em;
+        grid-template-columns: 33% 33% 33%;
+        padding: 1em;
+        .video-item {
+          border: 1px solid #dddddd;
+          background-color: white;
+          padding: 15px;
+          margin: 10px;
+          height: 450px;
+          flex-basis: 32%;
+          box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.3);
+          border-radius: 5px;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .video-status {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            span {
+              border-radius: 2px;
+              padding: 0.25em 0.5rem;
+              text-transform: uppercase;
+              font-weight: 700;
+              font-size: 0.9rem;
+              letter-spacing: 0.3px;
+            }
+            &__live {
+              background: #ffcdd2;
+              color: #c63737;
+            }
+
+            &__end {
+              background: #c8e6c9;
+              color: #256029;
+            }
+          }
+          .video-iframe {
+            margin-top: 10px;
+            width: 100% !important;
+            height: 250px;
+            iframe {
+              width: 100% !important;
+              height: 100% !important;
+            }
+          }
+          .video-info {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-top: 10px;
+            &__title {
+              font-weight: bold;
+              font-size: 1.4rem;
+            }
+            &__description {
+              font-weight: 500;
+              font-size: 1.2rem;
+              color: grey;
+            }
+          }
+          .video-statistical {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            &__total {
+              padding: 0.5rem 1rem;
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+
+      .not-data {
+        &__center {
+          margin: 0;
+          position: absolute;
+          top: 45%;
+          left: 50%;
+          -ms-transform: translate(-40%, -40%);
+          transform: translate(-40%, -40%);
+        }
+      }
+    }
+  }
+}

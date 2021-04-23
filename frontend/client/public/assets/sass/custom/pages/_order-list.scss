@@ -1,0 +1,19 @@
+.order-list-container {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: calc(100vh - 130px);
+  min-height: calc(100vh - 130px);
+
+  .order-list {
+    // background-color: white;
+    .no-found {
+      text-align: center;
+    }
+
+    .order-code-highlight {
+      color: #56a3ed;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.syntax-management {
+  .syntax-table {
+    width: 100%;
+    .syntax-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #deebfc;
+      }
+
+      .syntax-format {
+        float: left;
+        padding-top: 6px;
+      }
+
+      .syntax-action {
+        float: right;
+      }
+    }
+  }
+}
+
+.syntax-table-empty {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.syntax-badge-space {
+  border-radius: 2px;
+  padding: 0.25em 0.5rem;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  background: #f1f0f0;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.syntax-badge-syntax {
+  border-radius: 5px;
+  padding: 0.25em 1rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  background: #0077fa;
+  color: whitesmoke;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.syntax-text {
+  font-weight: bold;
+  font-size: 14px;
+}

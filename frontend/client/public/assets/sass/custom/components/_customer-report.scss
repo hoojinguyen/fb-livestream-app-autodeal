@@ -1,0 +1,55 @@
+.customer-report {
+  .footer-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .rp-no-data {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-top: 10%;
+    width: 100%;
+    height: 250px;
+  }
+  &__header {
+    .cus-title {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  }
+
+  &__body {
+    text-align: center;
+    .cus-chart {
+      margin-top: 40px;
+
+      &__header {
+        .title {
+          font-weight: bold;
+          font-size: 1.8rem;
+          text-transform: uppercase;
+        }
+        .sub-title {
+          font-weight: thin;
+          font-style: italic;
+          font-size: 1.4rem;
+        }
+      }
+
+      &__body {
+        width: 100%;
+        .data-table {
+          margin-left: 30%;
+          margin-right: 30%;
+          margin-top: 30px;
+        }
+
+        .data-chart {
+          margin-left: 20%;
+          margin-right: 20%;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}

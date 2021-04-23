@@ -1,0 +1,64 @@
+.sale-conversation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  &__header {
+    height: 60px;
+    border-bottom: 1px solid #dddddd;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__right {
+      font-size: 1rem;
+      .status-connect {
+        color: green;
+      }
+      .status-disconnect {
+        color: red;
+      }
+      .refresh-connect {
+        padding-left: 15px;
+        font-weight: bold;
+        cursor: pointer;
+
+        i {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  &__body {
+    max-height: calc(100vh - 280px);
+    min-height: calc(100vh - 280px);
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  &__footer {
+    height: 120px;
+  }
+
+  &__yet {
+    height: 100%;
+    position: relative;
+
+    &__center {
+      margin: 0;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      -ms-transform: translate(-40%, -40%);
+      transform: translate(-40%, -40%);
+    }
+  }
+}

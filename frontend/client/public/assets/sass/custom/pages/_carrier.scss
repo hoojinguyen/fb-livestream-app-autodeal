@@ -1,0 +1,23 @@
+.carrier-management {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: calc(100vh - 130px);
+  min-height: calc(100vh - 130px);
+
+  .table-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h5 {
+      font-weight: bold;
+      padding-top: 10px;
+    }
+  }
+
+  .dialog-new {
+    .title {
+      text-decoration: underline;
+    }
+  }
+}

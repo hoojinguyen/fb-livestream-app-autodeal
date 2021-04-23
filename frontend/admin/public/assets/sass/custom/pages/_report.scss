@@ -1,0 +1,10 @@
+.report-page {
+  max-height: calc(100vh - 140px);
+  min-height: calc(100vh - 140px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  &__item {
+    margin-top: 10px;
+  }
+}

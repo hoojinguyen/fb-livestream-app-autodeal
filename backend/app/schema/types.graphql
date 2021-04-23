@@ -1,0 +1,119 @@
+scalar Date
+scalar DateTime
+scalar Decimal
+scalar UInt64
+scalar JSON
+scalar ID
+scalar Upload
+
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Query {
+  user(id: ID!): User
+  users(first: ID, after: String): UserConnection
+  todo(id: ID!): Todo
+  todos(first: ID, after: String): TodoConnection
+}
+
+type Mutation {
+  createUser(input: CreateUserInput!): SaveUserResult
+  updateUser(input: UpdateUserInput!): SaveUserResult
+  createTodo(input: CreateTodoInput!): SaveTodoResult
+  updateTodo(input: updateTodoInput!): SaveTodoResult
+  deleteTodo(id: Int!): DeleteTodoResult
+}
+
+type UserConnection {
+  edges: [UserEdge]
+  pageInfo: PageInfo!
+  total: Int
+}
+
+type TodoConnection {
+  edges: [TodoEdge]
+  pageInfo: PageInfo!
+  total: Int
+}
+
+type UserEdge {
+  cursor: String
+  node: User
+}
+
+type TodoEdge {
+  cursor: String
+  node: Todo
+}
+
+type PageInfo {
+  hasNextPage: Boolean!
+  hasPreviousPage: Boolean!
+  startCursor: String
+  endCursor: String
+}
+
+type User {
+  id: ID!
+  name: String
+  email: String!
+  role: String
+  createdAt: DateTime
+  updatedAt: DateTime
+  todos(first: Int, after: String): TodoConnection
+}
+
+type Todo {
+  id: ID!
+  user: User
+  title: String
+  completed: Boolean
+  createdAt: DateTime
+  updatedAt: DateTime
+}
+
+type UserError {
+  field: [String!]
+  message: String!
+}
+
+type SaveUserResult {
+  userErrors: [UserError!]!
+  result: User
+}
+
+type SaveTodoResult {
+  userErrors: [UserError!]!
+  result: Todo
+}
+
+type DeleteTodoResult {
+  userErrors: [UserError!]!
+  result: Boolean
+}
+
+input CreateUserInput {
+  name: String!
+  email: String!
+  password: String!
+}
+
+input UpdateUserInput {
+  id: ID!
+  name: String!
+  password: String
+}
+
+input CreateTodoInput {
+  title: String
+  completed: Boolean
+  userId: Int!
+}
+
+input updateTodoInput {
+  id: ID!
+  title: String
+  completed: Boolean
+}
