@@ -18,7 +18,7 @@ Information technology and Live Commerce (online sales), are gradually being wid
   - AWS S3
   - Docker
   - Kubernetes
-  - Gcloud
+  - Google Kubernetes Engine (GKE)
 
 ## Authors
   - Nguyễn Văn Hội ( vanhoinguyen98@gmail.com )
