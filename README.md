@@ -9,5 +9,5 @@ Information technology and Live Commerce (online sales), are gradually being wid
   - Admin: ***https://admin.hkteam.site/***
 
 ## Authors
-  - Nguyễn Văn Hội (vanhoinguyen98@gmail.com)
-  - Lê Mai Văn Khánh (khanhduv4@gmail.com)
+  - Nguyễn Văn Hội ( vanhoinguyen98@gmail.com )
+  - Lê Mai Văn Khánh ( khanhduv4@gmail.com )
