@@ -1,6 +1,0 @@
-.p-inputnumber {
-    &.p-error > .p-inputtext,
-    &.p-invalid > .p-inputtext {
-        @include invalid-input();
-    }
-}
