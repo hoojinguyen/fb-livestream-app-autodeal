@@ -5,12 +5,13 @@ Information technology and live commerce (online sales) are increasingly being i
   - The entire source code was initially developed and completed at ***https://gitlab.com/kltn2***. It has since been migrated to GitHub for improved accessibility and collaboration.
 
 ## Demo
-  - Introduction Video:
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/0Gy9RAZZUNo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  [![Introduction Video](https://img.youtube.com/vi/0Gy9RAZZUNo/0.jpg)](https://www.youtube.com/watch?v=0Gy9RAZZUNo)
+
+## Quick Access
   - Client Application: ***[https://flad.hkteam.site](https://flad.hkteam.site)***
   - Admin Dashboard: ***[https://admin.hkteam.site](https://admin.hkteam.site)***
 
-### Technologies and Tools
+## Technologies and Tools
 
 #### Frontend
 - Vue.js: Progressive JavaScript framework for building user interfaces
