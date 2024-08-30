@@ -2,7 +2,7 @@
 Information technology and live commerce (online sales) are increasingly being integrated into both society at large and the retail sector, benefiting individuals and large enterprises alike. As the number of sales per livestream grows, it becomes challenging for sellers to manage customer information and close orders efficiently. Our team aims to develop an application that automates order management and closing for Facebook livestreams, making it easier and more convenient for sellers to handle sales during live broadcasts. Additionally, we will leverage __Kubernetes__, an open-source platform that automates deployment, management, and scaling processes, to build and deploy this application effectively.
 
 ## Notes
-  - The entire source code was initially developed and completed at ***https://gitlab.com/kltn2***. It has since been migrated to GitHub for improved accessibility and collaboration.
+The entire source code was initially developed and completed at ***https://gitlab.com/kltn2***. It has since been migrated to GitHub for improved accessibility and collaboration.
 
 ## Demo
   [![Introduction Video](https://img.youtube.com/vi/0Gy9RAZZUNo/0.jpg)](https://www.youtube.com/watch?v=0Gy9RAZZUNo)
