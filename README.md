@@ -5,7 +5,8 @@ Information technology and live commerce (online sales) are increasingly being i
 The entire source code was initially developed and completed at ***https://gitlab.com/kltn2***. It has since been migrated to GitHub for improved accessibility and collaboration.
 
 ## Demo
-  [![Introduction Video](https://img.youtube.com/vi/0Gy9RAZZUNo/0.jpg)](https://www.youtube.com/watch?v=0Gy9RAZZUNo)
+  [![Flad Demo](https://img.youtube.com/vi/0Gy9RAZZUNo/1.jpg)](https://www.youtube.com/watch?v=0Gy9RAZZUNo)
+
 
 ## Quick Access
   - Client Application: ***[https://flad.hkteam.site](https://flad.hkteam.site)***
