@@ -14,21 +14,22 @@ Information technology and live commerce (online sales) are increasingly being i
 ## Technologies and Tools
 
 #### Frontend
-- Vue.js: Progressive JavaScript framework for building user interfaces
-- Facebook SDK: For integrating Facebook features and authentication
+- **Vue.js**: Progressive JavaScript framework for building user interfaces
+- **Facebook SDK**: For integrating Facebook features and authentication
 
 #### Backend
-- Node.js: JavaScript runtime for server-side development
-- Koa: Lightweight and expressive web framework for Node.js
-- PostgreSQL: Powerful, open-source relational database
+- **Node.js**: JavaScript runtime for server-side development
+- **Koa**: Lightweight and expressive web framework for Node.js
+- **PostgreSQL**: Powerful, open-source relational database
 
 #### Cloud Services
-- AWS S3: Scalable object storage for storing and retrieving data
+- **AWS S3**: Scalable object storage for storing and retrieving data
 
 #### DevOps and Deployment
-- Docker: Platform for containerizing applications
-- Kubernetes: Container orchestration for automating deployment, scaling, and management
-- Google Kubernetes Engine (GKE): Managed Kubernetes service on Google Cloud Platform
+- **Docker**: Platform for containerizing applications
+- **Kubernetes**: Container orchestration for automating deployment, scaling, and management
+- **Google Kubernetes Engine (GKE)**: Managed Kubernetes service on Google Cloud Platform
+- **Heroku**: Cloud platform for hosting and deploying applications
 
 ## Authors
   - Nguyễn Văn Hội ( vanhoinguyen98@gmail.com )
